@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppin",sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    background-color: white;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    /* border: solid; */
+}
+.logo{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+nav{
+    height: fit-content;
+}
+.filter{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    /* margin: 50px; */
+    display: none;
+    background: rgb(0, 0, 0, .8);
+    transform: translateX(-200%);
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    left: 0;    
+    top: 0;
+    z-index: 3000;
+    transition: transform .7s ease-in;
+    
+
+}
+.filter ul{
+    justify-content:first baseline;
+    align-items: center; 
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    /* padding: 20px; */
+    background-color: black;
+    width: 50%;
+    height: 100%;
+    
+}
+ul a{
+    color: white;
+    text-decoration-line: none;
+    font-size: larger;
+    font-family: "Poppin",sans-serif;
+}
+#check:checked ~ .filter{
+    transform: translateX(0);
+    display: block;
+}
+
+a:hover{
+    color: red;
+}
+a:hover{
+    color: rgb(105, 100, 100);
+}
+nav input{
+    visibility: hidden;
+    display: none;
+    cursor: pointer;
+
+}
+nav label i{
+    color: white;
+    font-size:30px;
+    display: block;
+    cursor: pointer;
+
+}
+ul label{
+    text-align: right;
+    width: 100%;
+    display: block;
+}

@@ -460,6 +460,11 @@ a:hover{
     font-style: italic;
    
 }
+.form_button{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+}
 .form-area{
     display: flex;
     flex-direction: column;
@@ -524,5 +529,9 @@ a:hover{
 .footers_space{
     display: flex;
     padding: 30px;
-    gap: 20px;
+    background-color: rgb(62, 56, 56);
+    gap: 30px;
+}
+footer h6{
+    color: white;
 }

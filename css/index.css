@@ -399,7 +399,7 @@ a:hover{
     line-height: 25px;
     word-spacing: 3px;
     letter-spacing: 0.5px;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
     color: rgb(169, 162, 162);
     /* font-size: smaller; */
    /* color:  rgb(229,229,229); */
@@ -413,15 +413,14 @@ a:hover{
  .grids-container{
     gap: 20px;
     padding: 20px;
-    display: grid;
-    grid-template-columns: (minmax(300px,548px));
+     /* display: flex; */
     background-color: rgb(236,87,17);
     position: relative;
+      /*  justify-content: center; */
+
 
  }
- .grids{
-    position: absolute;
- }
+ 
  .grids-container h3{
     color: white;
     margin-bottom: 10px;
@@ -429,28 +428,48 @@ a:hover{
 
  }
  .grid_boxes{
-    position: relative;
-    display: flex;
-    gap: 10px;
+  
+   position: relative;
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: -70px;
  }
+    .boxes{
+        /* position: absolute; */
+        background-color: rgb(62, 56, 56);
+        border-radius: 1rem;
+        padding: 2rem;
+        color: white;
+        max-width: 350px;
+        min-width: 250px;
+        max-height: max-content;  
+        margin-inline: auto;  
+    }
  .grid01 {
-    background-color: rgb(62, 56, 56);
+    /* background-color: rgb(62, 56, 56);
     border-radius: 1rem;
     padding: 2rem;
     color: white;
-    position: absolute;
+    max-width: fit-content;
+    max-height: fit-content; */
+   
  }
+ 
  .grid02 {
-    background-color: rgb(62, 56, 56);
+    /* background-color: rgb(62, 56, 56);
     border-radius: 1rem;
     padding: 2rem;
-    color: white;
+    color: white; */
  }
  .grid03 {
-    background-color: rgb(62, 56, 56);
+    /* background-color: rgb(62, 56, 56);
     border-radius: 1rem;
     padding: 2rem;
-    color: white;
+    color: white; */
  }
 .grids-container p{
     line-height: 25px;
@@ -461,9 +480,11 @@ a:hover{
    
 }
 .form_button{
-    display: flex;
-    align-items: center;
-    width: fit-content;
+    background-color: rgb(236,87,17);
+    color: white;
+    word-spacing: 1px;
+    text-align: center;
+    width: 150px;
 }
 .form-area{
     display: flex;
@@ -527,11 +548,31 @@ a:hover{
     border-radius: 1rem;
 }
 .footers_space{
-    display: flex;
-    padding: 30px;
+    /* display: flex; */
+    text-align: center;
+    padding: 10px;
     background-color: rgb(62, 56, 56);
-    gap: 30px;
+    /* gap: 30px; */
+    margin-bottom: 20px;
+    
 }
 footer h6{
-    color: white;
+    color: rgb(229, 229, 229);
+    text-align: center;
+    text-decoration: underline;
+    /* text-decoration: rgb(229, 229, 229); */
+    margin-bottom: 20px;
+    font-size: smaller;
+}
+.footer a{
+    color: rgb(229, 229, 229);
+    font-size: 5px;
+    margin-bottom: 20px;
+}
+.footer-text{
+    color: rgb(229, 229, 229);
+
+}
+.footer_body{
+    font-size: 11px;
 }
